@@ -3,9 +3,9 @@ class Bank {
         this._accounts = [];
     }
 
-    static #nextNumber = 0;
+    static _nextNumber = 0;
     static getNextNumber() {
-        return Bank.#nextNumber++;
+        return Bank._nextNumber++;
     }
 
     addAccount() {
